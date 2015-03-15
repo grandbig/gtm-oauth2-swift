@@ -13,6 +13,13 @@
 		6E5550871AB5ABDC00CBB8D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E5550861AB5ABDC00CBB8D2 /* Images.xcassets */; };
 		6E55508A1AB5ABDC00CBB8D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5550881AB5ABDC00CBB8D2 /* LaunchScreen.xib */; };
 		6E5550961AB5ABDC00CBB8D2 /* OAuth2SwiftSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5550951AB5ABDC00CBB8D2 /* OAuth2SwiftSampleTests.swift */; };
+		6E5550AB1AB5AD7C00CBB8D2 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5550A31AB5AD7C00CBB8D2 /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E5550AC1AB5AD7C00CBB8D2 /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5550A51AB5AD7C00CBB8D2 /* GTMOAuth2Authentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E5550AD1AB5AD7C00CBB8D2 /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5550A71AB5AD7C00CBB8D2 /* GTMOAuth2SignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E5550AE1AB5AD7C00CBB8D2 /* GTMOAuth2ViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5550A91AB5AD7C00CBB8D2 /* GTMOAuth2ViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E5550AF1AB5AD7C00CBB8D2 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5550AA1AB5AD7C00CBB8D2 /* GTMOAuth2ViewTouch.xib */; };
+		6E5550B11AB5AFB600CBB8D2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5550B01AB5AFB600CBB8D2 /* Security.framework */; };
+		6E5550B31AB5AFBF00CBB8D2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5550B21AB5AFBF00CBB8D2 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,18 @@
 		6E55508F1AB5ABDC00CBB8D2 /* OAuth2SwiftSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OAuth2SwiftSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5550941AB5ABDC00CBB8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E5550951AB5ABDC00CBB8D2 /* OAuth2SwiftSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2SwiftSampleTests.swift; sourceTree = "<group>"; };
+		6E5550A11AB5AC6B00CBB8D2 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		6E5550A21AB5AD7C00CBB8D2 /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
+		6E5550A31AB5AD7C00CBB8D2 /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcher.m; sourceTree = "<group>"; };
+		6E5550A41AB5AD7C00CBB8D2 /* GTMOAuth2Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2Authentication.h; sourceTree = "<group>"; };
+		6E5550A51AB5AD7C00CBB8D2 /* GTMOAuth2Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2Authentication.m; sourceTree = "<group>"; };
+		6E5550A61AB5AD7C00CBB8D2 /* GTMOAuth2SignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2SignIn.h; sourceTree = "<group>"; };
+		6E5550A71AB5AD7C00CBB8D2 /* GTMOAuth2SignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2SignIn.m; sourceTree = "<group>"; };
+		6E5550A81AB5AD7C00CBB8D2 /* GTMOAuth2ViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2ViewControllerTouch.h; sourceTree = "<group>"; };
+		6E5550A91AB5AD7C00CBB8D2 /* GTMOAuth2ViewControllerTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2ViewControllerTouch.m; sourceTree = "<group>"; };
+		6E5550AA1AB5AD7C00CBB8D2 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
+		6E5550B01AB5AFB600CBB8D2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6E5550B21AB5AFBF00CBB8D2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5550B31AB5AFBF00CBB8D2 /* SystemConfiguration.framework in Frameworks */,
+				6E5550B11AB5AFB600CBB8D2 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +80,8 @@
 		6E5550711AB5ABDC00CBB8D2 = {
 			isa = PBXGroup;
 			children = (
+				6E5550B21AB5AFBF00CBB8D2 /* SystemConfiguration.framework */,
+				6E5550B01AB5AFB600CBB8D2 /* Security.framework */,
 				6E55507C1AB5ABDC00CBB8D2 /* OAuth2SwiftSample */,
 				6E5550921AB5ABDC00CBB8D2 /* OAuth2SwiftSampleTests */,
 				6E55507B1AB5ABDC00CBB8D2 /* Products */,
@@ -77,6 +100,8 @@
 		6E55507C1AB5ABDC00CBB8D2 /* OAuth2SwiftSample */ = {
 			isa = PBXGroup;
 			children = (
+				6E55509F1AB5AC1700CBB8D2 /* Libs */,
+				6E5550A11AB5AC6B00CBB8D2 /* Bridge-Header.h */,
 				6E55507F1AB5ABDC00CBB8D2 /* AppDelegate.swift */,
 				6E5550811AB5ABDC00CBB8D2 /* ViewController.swift */,
 				6E5550831AB5ABDC00CBB8D2 /* Main.storyboard */,
@@ -110,6 +135,30 @@
 				6E5550941AB5ABDC00CBB8D2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E55509F1AB5AC1700CBB8D2 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				6E5550A01AB5AC2500CBB8D2 /* GTMOAuth2 */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		6E5550A01AB5AC2500CBB8D2 /* GTMOAuth2 */ = {
+			isa = PBXGroup;
+			children = (
+				6E5550A21AB5AD7C00CBB8D2 /* GTMHTTPFetcher.h */,
+				6E5550A31AB5AD7C00CBB8D2 /* GTMHTTPFetcher.m */,
+				6E5550A41AB5AD7C00CBB8D2 /* GTMOAuth2Authentication.h */,
+				6E5550A51AB5AD7C00CBB8D2 /* GTMOAuth2Authentication.m */,
+				6E5550A61AB5AD7C00CBB8D2 /* GTMOAuth2SignIn.h */,
+				6E5550A71AB5AD7C00CBB8D2 /* GTMOAuth2SignIn.m */,
+				6E5550A81AB5AD7C00CBB8D2 /* GTMOAuth2ViewControllerTouch.h */,
+				6E5550A91AB5AD7C00CBB8D2 /* GTMOAuth2ViewControllerTouch.m */,
+				6E5550AA1AB5AD7C00CBB8D2 /* GTMOAuth2ViewTouch.xib */,
+			);
+			path = GTMOAuth2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5550AF1AB5AD7C00CBB8D2 /* GTMOAuth2ViewTouch.xib in Resources */,
 				6E5550851AB5ABDC00CBB8D2 /* Main.storyboard in Resources */,
 				6E55508A1AB5ABDC00CBB8D2 /* LaunchScreen.xib in Resources */,
 				6E5550871AB5ABDC00CBB8D2 /* Images.xcassets in Resources */,
@@ -212,8 +262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5550AE1AB5AD7C00CBB8D2 /* GTMOAuth2ViewControllerTouch.m in Sources */,
+				6E5550AB1AB5AD7C00CBB8D2 /* GTMHTTPFetcher.m in Sources */,
 				6E5550821AB5ABDC00CBB8D2 /* ViewController.swift in Sources */,
+				6E5550AD1AB5AD7C00CBB8D2 /* GTMOAuth2SignIn.m in Sources */,
 				6E5550801AB5ABDC00CBB8D2 /* AppDelegate.swift in Sources */,
+				6E5550AC1AB5AD7C00CBB8D2 /* GTMOAuth2Authentication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +390,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = OAuth2SwiftSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OAuth2SwiftSample/Bridge-Header.h";
 			};
 			name = Debug;
 		};
@@ -346,9 +404,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = OAuth2SwiftSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OAuth2SwiftSample/Bridge-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +467,7 @@
 				6E55509B1AB5ABDC00CBB8D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E55509C1AB5ABDC00CBB8D2 /* Build configuration list for PBXNativeTarget "OAuth2SwiftSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +476,7 @@
 				6E55509E1AB5ABDC00CBB8D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
