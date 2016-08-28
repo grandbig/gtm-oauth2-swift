@@ -205,6 +205,8 @@
 		6E5550721AB5ABDC00CBB8D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = grandbig.github.io;
 				TargetAttributes = {
