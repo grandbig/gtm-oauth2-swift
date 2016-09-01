@@ -11,11 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     var auth:GTMOAuth2Authentication!
-    let kKeychainItemName:NSString! = "GOAuthTest"
-    let scope:NSString! = "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/calendar"
-    let clientId:NSString! = "579581429599-e0d6008vpvfmfah1kqmbv6tp9dgs3fbf.apps.googleusercontent.com"
-    let clientSecret:NSString! = "qdjd7HVsqA3Fk9qzSx5nMXuR"
-    let hasLoggedIn:NSString! = "hasLoggedInKey"
+    let kKeychainItemName:String! = "GOAuthTest"
+    let scope:String! = "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/calendar"
+    let clientId:String! = "579581429599-e0d6008vpvfmfah1kqmbv6tp9dgs3fbf.apps.googleusercontent.com"
+    let clientSecret:String! = "qdjd7HVsqA3Fk9qzSx5nMXuR"
+    let hasLoggedIn:String! = "hasLoggedInKey"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +32,8 @@ class ViewController: UIViewController {
     }
 
     func startLogIn() {
-        var defaults:NSUserDefaults? = NSUserDefaults.standardUserDefaults()
-        var hasLoggedInFlag:Bool! = defaults?.boolForKey(hasLoggedIn)
+        let defaults:NSUserDefaults? = NSUserDefaults.standardUserDefaults()
+        let hasLoggedInFlag:Bool! = defaults?.boolForKey(hasLoggedIn as String)
         
         if(hasLoggedInFlag == true) {
             // 認証したことがある場合
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
             self.authorizeRequest()
         } else {
             // 認証したことがない場合
-            var gvc:GTMOAuth2ViewControllerTouch! = GTMOAuth2ViewControllerTouch(scope: scope, clientID: clientId, clientSecret: clientSecret, keychainItemName: "Google", delegate: self, finishedSelector: "viewController:finishedWithAuth:error:")
+            let gvc:GTMOAuth2ViewControllerTouch! = GTMOAuth2ViewControllerTouch(scope: scope, clientID: clientId, clientSecret: clientSecret, keychainItemName: "Google", delegate: self, finishedSelector: #selector(ViewController.viewController(_:finishedWithAuth:error:)))
             self.presentViewController(gvc, animated: true, completion: nil)
         }
     }
@@ -54,8 +54,8 @@ class ViewController: UIViewController {
         } else {
             // 認証成功
             self.auth = finishedWithAuth
-            var defaults = NSUserDefaults.standardUserDefaults()
-            defaults.setBool(true, forKey: hasLoggedIn)
+            let defaults = NSUserDefaults.standardUserDefaults()
+            defaults.setBool(true, forKey: hasLoggedIn as String)
             defaults.synchronize()
             
             // アクセストークンの取得
@@ -67,10 +67,10 @@ class ViewController: UIViewController {
     }
     
     func authorizeRequest() {
-        println(self.auth)
-        var req:NSMutableURLRequest! = NSMutableURLRequest(URL: self.auth.tokenURL)
+        print(self.auth)
+        let req:NSMutableURLRequest! = NSMutableURLRequest(URL: self.auth.tokenURL)
         self.auth.authorizeRequest(req, completionHandler: { (error) -> Void in
-            println(self.auth)
+            print(self.auth)
         })
     }
 }
